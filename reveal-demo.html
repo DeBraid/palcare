@@ -1,0 +1,20 @@
+<head>
+	<meta charset="utf-8">
+	<title>Angular js Toronto Meetup</title>
+	<meta name="description" content="Slide show with reveal js on meteor.">
+	<meta name="author" content="Derek Braid">
+	<link rel="stylesheet" href="/packages/reveal-js/reveal.js/css/theme/night.css" id="theme"/>
+</head>
+
+<body>	
+	{{> reveal}}
+</body>
+
+<template name="reveal">
+	<div class="reveal">
+		<div class="slides">
+			{{renderRouter}}
+			{{> home}}
+		</div>
+	</div>
+</template>
